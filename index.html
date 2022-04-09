@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure JS Clock</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Realtime Realtime Clock Using Pure JavaScript</h1>
+        <p>(Created By Mohammad Hisham)</p>
+    </div>
+  <div class="clock-container">
+     <div id="hour"></div>
+     <div id="minute"></div>
+     <div id="second"></div>  
+  </div>
+  <div class="digital">
+      <h3 id="digital">
+
+      </h3>
+  </div>
+  <script>
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
+
+    document.getElementById("digital").innerHTML = dateTime;
+    </script>
+
+  <script src="index.js" ></script>
+</body>
+</html>
