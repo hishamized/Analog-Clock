@@ -85,3 +85,10 @@
     transform: scale(1.1);
     box-shadow: 1px 1px 5px 1px aqua;
 }
+
+@media only screen and (max-width: 600px){
+    .clock-container {
+        width: 60vw;
+        height: 60vw;
+    }
+}
